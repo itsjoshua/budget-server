@@ -10,7 +10,6 @@ const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 const PORT = process.env.PORT || 8080;
 
-//const secretDir = "D:\\Workdir\\expts\\secrets";
 fastify.register(require('fastify-static'), {
   root: path.join(__dirname, 'public')
 });
