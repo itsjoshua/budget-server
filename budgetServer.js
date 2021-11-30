@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8080;
 
 //const secretDir = "D:\\Workdir\\expts\\secrets";
 fastify.register(require('fastify-static'), {
-  root: path.join(__dirname, '../budget-entry/build')
+  root: path.join(__dirname, 'public')
 });
 
 fastify.register( cookie );
