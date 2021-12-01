@@ -126,7 +126,6 @@ fastify.post('/api/v1/auth/google',async (request, reply) => {
     email: email,
     picture: picture
   }  
-  // console.log( name + ' ' + email );
   request.session.user = { 
     email: email,
     needsSignIn: false
