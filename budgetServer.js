@@ -80,7 +80,6 @@ fastify.get('/budget/categories', async (request, reply) => {
   if( !resp ) {
     throw new Error('Please try again later.')
   }
-  // console.log(resp.data);
   let sessEmail = undefined;
   let listOfUsers = getAuthUsersFromPayload( resp );
   
