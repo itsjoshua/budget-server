@@ -136,6 +136,7 @@ fastify.post('/api/v1/auth/google',async (request, reply) => {
 } );
 
 fastify.post('/budget/needsSignIn', async( request, reply ) => {
+  //heroku logging
   console.log('********** server side client id: ' + process.env.REACT_APP_GOOGLE_CLIENT_ID);
   console.log('********** server side mode: ' + process.env.NODE_ENV);
   const needsSignInObj = { 
